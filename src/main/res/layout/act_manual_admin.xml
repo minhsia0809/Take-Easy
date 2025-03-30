@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#80DEEA">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="首頁"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/returnButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        </TableRow>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="編輯地點"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="介面最上方會顯示目前樓層，管理者可以透過點擊上方的點，修改地點名稱及決定是否啟用它，需要新增目的地時則點選欲新增的位置。平面圖上標示的點為輪椅可到達的目的地，該點以顏色區別當前狀態，若為綠色則代表當前可使用，亦即該點可以在安排輪椅行程時作為選擇的目的地；若為紅色則代表當前可能正進行空間修繕或更動，為不可用的狀態，該點於安排輪椅行程時無法被選擇。若樓層空間需要進行更動，則點選編輯平面圖進入編輯頁面，可在此頁面上針對平面圖進行修改。"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
